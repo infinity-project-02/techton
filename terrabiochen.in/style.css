@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background:
+    radial-gradient(circle at center, #2f4f7f, #0b132b 70%),
+    linear-gradient(135deg, #1a1a1a, #0a0a0a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  z-index: 3;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.08), transparent 60%);
+}
+
+.container {
+  position: relative;
+  max-width: 650px;
+  padding: 40px;
+  text-align: center;
+  z-index: 2;
+}
+
+.title {
+  font-size: 64px;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+
+  background: linear-gradient(
+    90deg,
+    #d7d7d7,
+    #ffffff,
+    #9fa6b2,
+    #ffffff,
+    #d7d7d7
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 8px rgba(255,255,255,0.4),
+    0 0 20px rgba(100,150,255,0.3);
+}
+
+.tagline {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.subscribe input {
+  padding: 12px;
+  width: 65%;
+  border: none;
+  outline: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.subscribe button {
+  padding: 12px 20px;
+  border: none;
+  background: #4da3ff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.subscribe button:hover {
+  background: #2b7cd3;
+}
+
+.social a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  color: #4da3ff;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .title {
+    font-size: 42px;
+  }
+
+  .subscribe {
+    flex-direction: column;
+  }
+
+  .subscribe input,
+  .subscribe button {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .subscribe button {
+    margin-top: 10px;
+  }
+}
+.site-footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.7;
+  z-index: 3;
+}
+
