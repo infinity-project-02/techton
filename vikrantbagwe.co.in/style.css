@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #050b14;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(6px);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.header nav a {
+  color: #fff;
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.header nav a:hover {
+  opacity: 1;
+}
+
+/* CANVAS */
+#bgCanvas {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h4 {
+  letter-spacing: 3px;
+  font-size: 14px;
+  color: #9bb7ff;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #ffffff, #7aa2ff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  max-width: 600px;
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* SUBSCRIBE */
+.subscribe {
+  display: flex;
+}
+
+.subscribe input {
+  padding: 12px;
+  width: 260px;
+  border: none;
+  outline: none;
+}
+
+.subscribe button {
+  padding: 12px 22px;
+  border: none;
+  background: #7aa2ff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.subscribe button:hover {
+  background: #5c86ff;
+}
+
+/* FOOTER */
+.footer {
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  z-index: 5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .subscribe {
+    flex-direction: column;
+  }
+
+  .subscribe input,
+  .subscribe button {
+    width: 100%;
+  }
+
+  .subscribe button {
+    margin-top: 10px;
+  }
+}
